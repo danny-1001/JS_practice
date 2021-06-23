@@ -8,16 +8,17 @@ const mainTitle = document.querySelector(".main-title");
 
 // //EVENT LISTENER: Listens to one of these events
 
-// button.addEventListener("click", addItem);
+button.addEventListener("click", addItem);
 
-// function addItem() {
-//   const newItem = document.createElement("li");
-//   newItem.classList.add("item");
-//   newItem.innerText = `Items ${items.length + 1}`;
-//   todoList.appendChild(newItem);
-//   todoNum.innerText = items.length;
-// }
+function addItem() {
+  const newItem = document.createElement("li");
+  newItem.classList.add("item");
+  newItem.innerText = `Items ${items.length + 1}`;
+  todoList.appendChild(newItem);
+  todoNum.innerText = items.length;
+}
 
-button.addEventListener("click", function () {
-  mainTitle.style.color = "red";
-});
+
+// button.addEventListener("click", function () {
+//   mainTitle.style.color = "red";
+// });
